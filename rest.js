@@ -41,7 +41,7 @@ const restaurant = {
   },
   orderpizza: function (mainIngredient, ...otheringredient) {
     console.log(mainIngredient);
-    console.log(otheringredientIngredient);
+    console.log(otheringredient);
   },
 };
 restaurant.orderDelivery({
@@ -91,4 +91,4 @@ add(8, 2, 5, 2, 1, 4);
 const x = [23, 5, 7];
 add(...x);
 
-resturantCopy.orderpizza('mushrroms', 'onons', 'olives', 'spinach');
+restaurant.orderpizza('mushrroms', 'onons', 'olives', 'spinach');

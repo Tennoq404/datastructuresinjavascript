@@ -15,7 +15,17 @@ console.log(undefined || 0 || '' || 'hello' || 23 || null);
 
 //const guests2 = resturant.numGuests || 10;
 //console.log(guests2);
+// 0 is also a falsy value
 
+console.log('----AND----');
+// the and works in the oppsite way of the or operator
+// the and operator shortcircuit when thr firdt value is falsy
 console.log(0 && 'jonas');
 console.log(7 && 'jonas');
-console.log(undefined && null);
+console.log('jonas' && 0);
+console.log('hello' && 23 && null && 'jonas');
+
+if (restaurant.orderpizza) {
+  restaurant.orderpizza('mushrooms', 'spinach');
+}
+restaurant.orderpizza && restaurant.orderpizza('mushrooms', 'spinach');
